@@ -1,0 +1,20 @@
+<script>
+var numeros = new Array (6);
+var sorteio;
+
+function sortear(){
+ return Math.floor((Math.random()* 59) +1);
+
+}
+for (i = 0; i < 6; i++){
+ sorteio = sortear();
+
+    if(numero.indexOf(sorteio) >= 0){
+              i--;
+          }else{
+            numeros[i] = sorteio;     
+    }
+ }
+ document.write(numeros.sort(function(a,b){return a-b}) + '<br>');
+
+</script>
